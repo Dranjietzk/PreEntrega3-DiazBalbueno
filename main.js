@@ -22,7 +22,7 @@ while (continuar) {
 
   alert("El resultado es: " + resultado);
 
-  let respuesta = prompt("¿Deseas hacer otro cálculo? (si/no)");
+  let respuesta = prompt("¿Querés hacer otro cálculo? (si/no)");
 
   if (respuesta.toLowerCase() !== "si") {
     continuar = false;
