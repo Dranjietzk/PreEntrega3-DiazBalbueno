@@ -1,13 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Básica</title>
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
 </head>
 <body>
-    
-<script src="main.js"></script>
+    <div class="calculator">
+        <h1>Calculadora</h1>
+        <input type="number" id="num1" placeholder="Ingrese el primer número">
+        <input type="number" id="num2" placeholder="Ingrese el segundo número">
+        <select id="operation">
+            <option value="sumar">Sumar</option>
+            <option value="restar">Restar</option>
+            <option value="multiplicar">Multiplicar</option>
+            <option value="dividir">Dividir</option>
+        </select>
+        <button onclick="calculate()">Calcular</button>
+        <div id="result"></div>
+    </div>
 
+    <div class="history">
+        <h2>Historial de Operaciones</h2>
+        <select id="searchOperation">
+        <option value="todas">Todas</option>
+        </select>
+        <button onclick="searchHistory()">Buscar Historial</button>
+        <div id="historyResult"></div>
+        <button onclick="clearHistory()">Limpiar Historial</button>
+    </div>
+
+    <script src="main.js"></script> 
 </body>
 </html>
