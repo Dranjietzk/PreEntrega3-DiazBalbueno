@@ -78,18 +78,3 @@ h2 {
   margin-top: 10px;
   white-space: pre-line; 
 }
-
-.clear-button {
-    background-color: #dc3545; /* Color de fondo rojo (puedes cambiarlo según tus preferencias) */
-    color: #fff; /* Color de texto blanco */
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px; /* Espaciado interno del botón */
-    cursor: pointer;
-    margin-top: 10px; /* Espacio superior para separar el botón de otras elementos */
-  }
-  
-  .clear-button:hover {
-    background-color: #c82333; /* Cambiar el color de fondo en el hover */
-  }
-  
