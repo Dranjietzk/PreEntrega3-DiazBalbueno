@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Calculadora y Clima</title>
     <link rel="stylesheet" type="text/css" href="style.css"> 
 </head>
 <body>
@@ -20,17 +20,20 @@
         <button onclick="calculate()">Calcular</button>
         <div id="result"></div>
     </div>
-
+        
     <div class="history">
         <h2>Historial de Operaciones</h2>
         <select id="searchOperation">
-        <option value="todas">Todas</option>
+            <option value="todas">Todas</option>
         </select>
         <button onclick="searchHistory()">Buscar Historial</button>
         <div id="historyResult"></div>
         <button onclick="clearHistory()">Limpiar Historial</button>
     </div>
+    <button id="weatherLocationButton">Obtener Clima por Ubicación</button>
+    <p id="weatherResult"></p>
 
     <script src="main.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
